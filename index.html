@@ -15,10 +15,10 @@
 
                 <div class="card-header-buttons">
 
-                    <button id="buttonTypePomodoro" class="active">
+                    <button id="buttonTypePomodoro" class="active" onclick="setPomodoroType(TIMER_TYPE_POMODORO)">
                         Pomodoro
                     </button>
-                    <button id="buttonTypeShortBreak">
+                    <button id="buttonTypeShortBreak" onclick="setPomodoroType(TIMER_TYPE_SHORT_BREAK)">
                         Short Break
                     </button>
 
@@ -38,13 +38,13 @@
                 </div>
 
                 <div class="card-footer">
-                    <button class="btn-sucess">
+                    <button class="btn-sucess" onclick="startTimer()">
                         Start
                     </button>
-                    <button class="btn-danger">
+                    <button class="btn-danger" onclick="stopTimer()">
                         Stop
                     </button>
-                    <button class="btn-reset">
+                    <button class="btn-reset" onclick="resetTimer()">
                         Reset
                     </button>
                 </div>
